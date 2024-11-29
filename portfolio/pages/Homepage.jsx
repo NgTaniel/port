@@ -17,9 +17,9 @@ const Homepage = () => {
 
       <div className={styles.buttoncontainer}>
         <button>About Me</button>
-        <button>Education</button>
+        <button>Education and Experiences</button>
         <button>Projects and Works</button>
-        <button onClick={() => navigate('/contact')}>Contacts</button>
+        <button onClick={() => navigate('/contact')}>Contact me</button>
       </div>
     </div>
   )
