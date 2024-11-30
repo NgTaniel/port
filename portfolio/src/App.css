@@ -9,6 +9,7 @@ body {
   animation: fadeAnim ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
+  overflow-x: hidden;
 }
 
 @keyframes fadeAnim {

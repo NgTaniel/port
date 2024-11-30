@@ -16,9 +16,9 @@ const Homepage = () => {
         </svg> */}
 
       <div className={styles.buttoncontainer}>
-        <button>About Me</button>
-        <button>Education and Experiences</button>
-        <button>Projects and Works</button>
+        <button onClick={() => navigate('/about')}>About Me</button>
+        <button onClick={() => navigate('/experience')}>Education and Experiences</button>
+        <button onClick={() => navigate('/projects')}>Projects and Works</button>
         <button onClick={() => navigate('/contact')}>Contact me</button>
       </div>
     </div>
