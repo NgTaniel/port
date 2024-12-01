@@ -1,8 +1,8 @@
 import React from 'react'
 import { styled } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
+import AnimateComp from './AnimateComp';
 // import styles from '../styles/Aboutpage.module.css'
-
 
 const Aboutpage = () => {
   const navigate = useNavigate()
@@ -44,6 +44,7 @@ const Aboutpage = () => {
   
   return (
     <>
+    <AnimateComp>
       <AboutContainer>
         <Backbutton onClick={() => navigate('/')}>
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -75,6 +76,7 @@ const Aboutpage = () => {
         </p>
       </AboutContainer>
       <br/>
+    </AnimateComp>
     </>
   )
 }

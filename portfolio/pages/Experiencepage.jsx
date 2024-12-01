@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/system';
 import { 
@@ -10,6 +10,7 @@ import {
   TableRow,
   Paper
 } from '@mui/material'
+import AnimateComp from './AnimateComp';
 
 const Experiencepage = () => {
   const navigate = useNavigate();  
@@ -43,25 +44,47 @@ const Experiencepage = () => {
     fontWeight: '400',
   });
   
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
+  const createData = (name, duration, summary) => {
+    return { name, duration, summary };
   }
-  
-  const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
+
+  const data = [
+    createData('Software Development Society (DevSoc) Training Lead', 'TERM 2-3 2024',
+      [
+        'Mentored a team of aspiring computer science and engineering students with application development concepts',
+        'Concepts involve but not limited to Vanilla JS, DOM, Figma UI/UX design and prototyping, React.js hooks and CSS',
+        'Engaged with the DevSoc internals team with external events like BBQs and Techspire, DevSoc\'s flagship event as an AV tech assistant',
+        'Involved as an O-Week stall member (Term 3 2024), demonstrated responsibilities such as welcoming incoming members, communicating information on the society\'s background, and distributing stall prizes'
+      ]
+    ),
+    createData('UNSW CSESoc Dev Trainee', 'TERM 3 2023', 
+      ['Began my experiences with React.js and software development', 
+        'Gained first interest in frontend, backend development and UI/UX design'
+      ]
+    ),
+    createData('Piano Society Events Subcommittee', 'TERM 2-3 2023',
+      [
+        'Communicated with executives and subcommittee team to organise and oversee events like termly concerts and practice sessions',
+        'Participated as an O-week stall member and welcomed incoming members, sharing insights and further details about the society'
+      ]
+    )
   ];
 
   const HeaderCells = styled(TableCell)({
     backgroundColor: 'black', 
-    color: 'white'
-  })
+    color: 'white',
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+  });
+
+  const StyledCells = styled(TableCell)({
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    color: 'white',
+    fontWeight: '500'
+  });
 
   return (
     <>
+    <AnimateComp>
       <ExpContainer>
         <Backbutton onClick={() => navigate('/')}>
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -78,29 +101,33 @@ const Experiencepage = () => {
 
         <Subheading>Experiences</Subheading>
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table sx={{ minWidth: 600 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <HeaderCells>Dessert (100g serving)</HeaderCells>
-                <HeaderCells align="right">Calories</HeaderCells>
-                <HeaderCells align="right">Fat&nbsp;(g)</HeaderCells>
-                <HeaderCells align="right">Carbs&nbsp;(g)</HeaderCells>
-                <HeaderCells align="right">Protein&nbsp;(g)</HeaderCells>
+                <HeaderCells>Experience</HeaderCells>
+                <HeaderCells align="center">Duration</HeaderCells>
+                <HeaderCells align="center">Roles&nbsp;and&nbsp;Responsibilities</HeaderCells>
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
+              {data.map((col, index) => (
                 <TableRow
-                  key={row.name}
-                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                key={col.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 }, 
+                backgroundColor: index % 2 === 0 ? '#422E8A' : '#543BB0' }}
                 >
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
-                  <TableCell align="right">{row.calories}</TableCell>
-                  <TableCell align="right">{row.fat}</TableCell>
-                  <TableCell align="right">{row.carbs}</TableCell>
-                  <TableCell align="right">{row.protein}</TableCell>
+                  <StyledCells sx={{background: 'none'}} component="th" scope="row">
+                    {col.name}
+                  </StyledCells>
+                  <StyledCells align="left">{col.duration}</StyledCells>
+                  <StyledCells align="left">
+                    <ul>
+                      {col.summary.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </StyledCells>
+                  
                 </TableRow>
               ))}
             </TableBody>
@@ -108,6 +135,8 @@ const Experiencepage = () => {
         </TableContainer>
         <br/>
       </ExpContainer>
+      <br/>
+    </AnimateComp>
     </>
   )
 }
