@@ -2,6 +2,15 @@
 import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/system';
 import AnimateComp from './AnimateComp';
+import { Button, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import sip1 from '../images/sip1.png';
+import sip2 from '../images/sip2.png';
+import trek1 from '../images/trek1.png';
+import trek2 from '../images/trek2.png';
+import care1 from '../images/care1.png';
+import care2 from '../images/care2.png';
+import synciety1 from '../images/synciety1.png'
+import synciety2 from '../images/synciety2.png'
 
 const Projectpage = () => {
   const navigate = useNavigate();
@@ -36,6 +45,27 @@ const Projectpage = () => {
     textAlign: 'center'
   });
 
+  const ProjectButton = styled(Button)({
+    margin: '0 auto', 
+    display: 'flex', 
+    width: '30vw'
+  });
+
+  const StyledCard = styled(Card)({
+    width: '100%', 
+    ':hover': {boxShadow: '0px 0px 5px 8px rgba(255, 255, 255, 0.5)'}
+  })
+
+  const CardTitle = styled(Typography)({
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', 
+    textAlign: 'center',
+    fontWeight: 600
+  });
+
+  const CardInfo = styled(Typography)({
+    fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
+  });
+
   return (
     <>
     <AnimateComp>
@@ -47,8 +77,97 @@ const Projectpage = () => {
         </Backbutton>
         <Heading>Past Projects and Works</Heading>
         <Subheading>UI/UX Screen Prototypes</Subheading>
+        <ProjectButton  
+          href='https://www.figma.com/design/80ivMhy3jkOXciToLXj3ZF/Sip-Sip-Hooray-Figma?node-id=0-1&t=Vr53JOvqKAbcpCIi-1' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={sip2}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Sip-Sip Hooray
+              </CardTitle>
+              <CardInfo variant="body3">
+                23T3 Trainee Project: UI Screen Design Prototype showcasing a drink simulator application 
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
+        <ProjectButton 
+          href='https://www.figma.com/design/48lidr4DcCEF5pjbsJV4dq/Trek?node-id=0-1&node-type=canvas&t=ikKIoTSdbjKQaPsF-0' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={trek2}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Trek
+              </CardTitle>
+              <CardInfo variant="body3">
+                Oversaw and assisted my 24T2 group with an Itinerary application prototype, in recommending destinations from a user&apos;s journey
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
+        <ProjectButton 
+          href='https://www.figma.com/design/bT2PC5w8HXGGH3CTl0C5oo/COMP3511-Checkpoint-4-Prototyping-(Final)?node-id=233-1893&t=xp3xXOkkEzWkOVMU-1' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={care2}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                CareCatalyst
+              </CardTitle>
+              <CardInfo variant="body3">
+                COMP3511 Project: Inspired by NGO&apos;s and their website interfaces to develop a screen design to address charitable goals towards particular issues, and utilising user interface concepts
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
+        <ProjectButton 
+          href='https://www.figma.com/design/qw4k5GVuTxaP5vURfGy158/Prototype?node-id=0-1&t=xs4dYBnI5BsR7cij-1' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={synciety2}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Synciety
+              </CardTitle>
+              <CardInfo variant="body3">
+                Assisted my 24T3 trainee group with an Calender-inspired application screen design, in planning upcoming society events for the user
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
         <Subheading>Project contributions</Subheading>
       </ProjectContainer>
+      <br/>
     </AnimateComp>
     </>
   )
