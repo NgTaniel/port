@@ -7,7 +7,7 @@ import sip1 from '../images/sip1.png';
 import sip2 from '../images/sip2.png';
 import trek1 from '../images/trek1.png';
 import trek2 from '../images/trek2.png';
-import care1 from '../images/care1.png';
+// import care1 from '../images/care1.png';
 import care2 from '../images/care2.png';
 import synciety1 from '../images/synciety1.png'
 import synciety2 from '../images/synciety2.png'
@@ -90,7 +90,7 @@ const Projectpage = () => {
             />
             <CardContent>
               <CardTitle gutterBottom variant="h5" component="div">
-                Sip-Sip Hooray
+                Sip-Sip Hooray UI
               </CardTitle>
               <CardInfo variant="body3">
                 23T3 Trainee Project: UI Screen Design Prototype showcasing a drink simulator application 
@@ -112,7 +112,7 @@ const Projectpage = () => {
             />
             <CardContent>
               <CardTitle gutterBottom variant="h5" component="div">
-                Trek
+                Trek UI
               </CardTitle>
               <CardInfo variant="body3">
                 Oversaw and assisted my 24T2 group with an Itinerary application prototype, in recommending destinations from a user&apos;s journey
@@ -156,16 +156,81 @@ const Projectpage = () => {
             />
             <CardContent>
               <CardTitle gutterBottom variant="h5" component="div">
-                Synciety
+                Synciety UI
               </CardTitle>
               <CardInfo variant="body3">
-                Assisted my 24T3 trainee group with an Calender-inspired application screen design, in planning upcoming society events for the user
+                Assisted my 24T3 trainee group with a Calender-inspired application screen design, in planning upcoming society events for the user
               </CardInfo>
             </CardContent>
           </StyledCard>
         </ProjectButton>
 
         <Subheading>Project contributions</Subheading>
+        <ProjectButton 
+          href='https://github.com/devsoc-unsw/trainee-emperor-24t3' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={synciety1}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Synciety
+              </CardTitle>
+              <CardInfo variant="body3">
+                Assisted my trainee group with a Calender-inspired application as a 24T3 Training Lead, the goal of this planning upcoming society events for the user
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
+        <ProjectButton 
+          href='https://github.com/devsoc-unsw/trainee-ranger-24t2' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={trek1}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Trek
+              </CardTitle>
+              <CardInfo variant="body3">
+                Assisted my trainee group with a Itinerary application as a 24T2 Training Lead, in recommending destinations from a user&apos;s journey as the main goal and inspiration
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
+
+        <ProjectButton 
+          href='https://github.com/csesoc/trainee-5-23t3' 
+          target='_blank'
+        >
+          <StyledCard>
+            <CardMedia
+              component='img'
+              alt='sip'
+              height='200'
+              image={sip1}
+            />
+            <CardContent>
+              <CardTitle gutterBottom variant="h5" component="div">
+                Sip-Sip Hooray
+              </CardTitle>
+              <CardInfo variant="body3">
+                My 23T3 trainee group project which focuses on a drinking simulator, intended to test and track the user&apos;s progress with the quantity and type of drinks interacted in the application
+              </CardInfo>
+            </CardContent>
+          </StyledCard>
+        </ProjectButton>
       </ProjectContainer>
       <br/>
     </AnimateComp>
