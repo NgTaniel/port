@@ -93,7 +93,7 @@ const Projectpage = () => {
                 Sip-Sip Hooray UI
               </CardTitle>
               <CardInfo variant="body3">
-                23T3 Trainee Project: UI Screen Design Prototype showcasing a drink simulator application 
+                23T3 Trainee Project: UI Screen Design Prototype showcasing a drink simulator application, with some multiplayer features such as a shared server code
               </CardInfo>
             </CardContent>
           </StyledCard>
@@ -115,7 +115,7 @@ const Projectpage = () => {
                 Trek UI
               </CardTitle>
               <CardInfo variant="body3">
-                Oversaw and assisted my 24T2 group with an Itinerary application prototype, in recommending destinations from a user&apos;s journey
+                Mentored my 24T2 group with an Itinerary application prototype, in recommending and planning destinations from a user&apos;s journey
               </CardInfo>
             </CardContent>
           </StyledCard>
@@ -159,7 +159,7 @@ const Projectpage = () => {
                 Synciety UI
               </CardTitle>
               <CardInfo variant="body3">
-                Assisted my 24T3 trainee group with a Calender-inspired application screen design, in planning upcoming society events for the user
+                Oversaw and assisted my 24T3 trainee group with a Calender-inspired application screen design, in planning upcoming society events for the user
               </CardInfo>
             </CardContent>
           </StyledCard>
@@ -182,7 +182,7 @@ const Projectpage = () => {
                 Synciety
               </CardTitle>
               <CardInfo variant="body3">
-                Assisted my trainee group with a Calender-inspired application as a 24T3 Training Lead, the goal of this planning upcoming society events for the user
+                Aided my trainee group with a Calender-inspired application as a 24T3 Training Lead with a co-lead, the goal of this planning upcoming society events for the user
               </CardInfo>
             </CardContent>
           </StyledCard>
@@ -204,7 +204,7 @@ const Projectpage = () => {
                 Trek
               </CardTitle>
               <CardInfo variant="body3">
-                Assisted my trainee group with a Itinerary application as a 24T2 Training Lead, in recommending destinations from a user&apos;s journey as the main goal and inspiration
+                Contributed with my trainee group with a Itinerary application as a 24T2 Training Lead, in recommending destinations from a user&apos;s journey as the main goal and inspiration
               </CardInfo>
             </CardContent>
           </StyledCard>
@@ -231,6 +231,7 @@ const Projectpage = () => {
             </CardContent>
           </StyledCard>
         </ProjectButton>
+        <br/>
       </ProjectContainer>
       <br/>
     </AnimateComp>

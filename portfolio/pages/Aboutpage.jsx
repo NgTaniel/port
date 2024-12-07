@@ -61,10 +61,10 @@ const Aboutpage = () => {
         </NoteIcon>
         <p>Hello, I am Nathaniel</p>
         <p>
-          I am a fourth year student at the University of New South Wales (UNSW) undergoing my Bachelor of Computer Science, with an option to potentially take an honours research thesis from the start of next year. As a current and aspiring undergraduate, I tend to explore many areas of computer science and software engineering, where during this exploration I have engaged in application development and user interface design. When developing applications, I learnt how outstanding user interface (UI) is important to appeal to the users and to provide a comfortable user experience (UX) whenever a user visits and interacts with an application to achieve their goals.
+          I am a fourth year student at the University of New South Wales (UNSW) undergoing my Bachelor of Computer Science, with an option to potentially take an honours research thesis from the start of next year. As a current and aspiring undergraduate, I tend to explore many areas of computer science and software engineering, where during this exploration I have engaged in application development and user interface design. When developing applications, I learnt the importance of outstanding user interfaces (UI) in appealing to the users and providing a comfortable user experience (UX) whenever a user visits and interacts with an application to achieve their goals.
         </p>
         <p>
-          Outside of my software development studies, I am an intermediate piano player for leisure, where I completed my Certificate of Performance in November 2022 and continued to explore online piano covers to learn.
+          Outside of my software development studies, I am an intermediate piano player for leisure, where I completed my Certificate of Performance in November 2022 and continue to explore online piano covers to learn.
         </p>
         <Subheading>Interests</Subheading>
         <p>

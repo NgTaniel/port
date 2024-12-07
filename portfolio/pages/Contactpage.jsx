@@ -16,7 +16,7 @@ const Contactpage = () => {
     margin: '5vh auto',
     padding: '0 3vw',
     color: 'white',
-    lineHeight: 1.6
+    lineHeight: 1.6,
   });
 
   const Backbutton = styled('button')({
