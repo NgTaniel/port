@@ -19,10 +19,10 @@ const Homepage = () => {
           </svg> */}
 
       <div className={styles.buttoncontainer}>
-        <button onClick={() => navigate('/about')}>About Me</button>
-        <button onClick={() => navigate('/experience')}>Education and Experiences</button>
-        <button onClick={() => navigate('/projects')}>Projects and Works</button>
-        <button onClick={() => navigate('/contact')}>Contact me</button>
+        <button onClick={() => navigate('/port/about')}>About Me</button>
+        <button onClick={() => navigate('/port/experience')}>Education and Experiences</button>
+        <button onClick={() => navigate('/port/projects')}>Projects and Works</button>
+        <button onClick={() => navigate('/port/contact')}>Contact me</button>
       </div>
       </AnimateComp>
     </div>

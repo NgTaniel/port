@@ -15,11 +15,11 @@ const App = () => {
       {/* <BrowserRouter> */}
       <AnimatePresence mode='wait'>
         <Routes key={location.pathname} location={location}>
-          <Route path='/' element={<Homepage/>}/>
-          <Route path='/about' element={<Aboutpage/>}/>
-          <Route path='/experience' element={<Experiencepage/>}/>
-          <Route path='/projects' element={<Projectpage/>}/>
-          <Route path='/contact' element={<Contactpage/>}/>
+          <Route path='/port' element={<Homepage/>}/>
+          <Route path='/port/about' element={<Aboutpage/>}/>
+          <Route path='/port/experience' element={<Experiencepage/>}/>
+          <Route path='/port/projects' element={<Projectpage/>}/>
+          <Route path='/port/contact' element={<Contactpage/>}/>
         </Routes>
       </AnimatePresence>
       {/* </BrowserRouter> */}
