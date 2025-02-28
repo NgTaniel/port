@@ -1,0 +1,33 @@
+.techrow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.techbox {
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15vw;
+    color: black;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Courier, monospace;
+}
+
+@media screen and (max-width: 750px) {
+    .techrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .techbox {
+        width: 25vw;
+    }
+    
+}

@@ -6,6 +6,7 @@ import Homepage from '../pages/Homepage'
 import Projectpage from '../pages/Projectpage'
 import './App.css'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import Techpage from '../pages/Techpage'
 
 const App = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/port/about' element={<Aboutpage/>}/>
           <Route path='/port/experience' element={<Experiencepage/>}/>
           <Route path='/port/projects' element={<Projectpage/>}/>
+          <Route path='/port/tech' element={<Techpage/>}/>
           <Route path='/port/contact' element={<Contactpage/>}/>
         </Routes>
       </AnimatePresence>

@@ -52,14 +52,13 @@ const Projectpage = () => {
   });
 
   const StyledCard = styled(Card)({
-    width: '100%', 
     ':hover': {boxShadow: '0px 0px 5px 8px rgba(255, 255, 255, 0.5)'}
   })
 
   const CardTitle = styled(Typography)({
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', 
     textAlign: 'center',
-    fontWeight: 600
+    fontWeight: 600,
   });
 
   const CardInfo = styled(Typography)({
@@ -81,18 +80,27 @@ const Projectpage = () => {
           href='https://www.figma.com/design/80ivMhy3jkOXciToLXj3ZF/Sip-Sip-Hooray-Figma?node-id=0-1&t=Vr53JOvqKAbcpCIi-1' 
           target='_blank'
         >
-          <StyledCard>
+          <StyledCard >
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={sip2}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Sip-Sip Hooray UI
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 23T3 Trainee Project: UI Screen Design Prototype showcasing a drink simulator application, with some multiplayer features such as a shared server code
               </CardInfo>
             </CardContent>
@@ -107,14 +115,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={trek2}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Trek UI
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 Mentored my 24T2 group with an Itinerary application prototype, in recommending and planning destinations from a user&apos;s journey
               </CardInfo>
             </CardContent>
@@ -129,14 +146,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={care2}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 CareCatalyst
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 COMP3511 Project: Inspired by NGO&apos;s and their website interfaces to develop a screen design to address charitable goals towards particular issues, and utilising user interface concepts
               </CardInfo>
             </CardContent>
@@ -151,14 +177,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={synciety2}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Synciety UI
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 Oversaw and assisted my 24T3 trainee group with a Calender-inspired application screen design, in planning upcoming society events for the user
               </CardInfo>
             </CardContent>
@@ -174,14 +209,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={synciety1}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Synciety
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 Aided my trainee group with a Calender-inspired application as a 24T3 Training Lead with a co-lead, the goal of this planning upcoming society events for the user
               </CardInfo>
             </CardContent>
@@ -196,14 +240,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={trek1}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Trek
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 Contributed with my trainee group with a Itinerary application as a 24T2 Training Lead, in recommending destinations from a user&apos;s journey as the main goal and inspiration
               </CardInfo>
             </CardContent>
@@ -218,14 +271,23 @@ const Projectpage = () => {
             <CardMedia
               component='img'
               alt='sip'
-              height='200'
+              // height='200'
               image={sip1}
             />
             <CardContent>
-              <CardTitle gutterBottom variant="h5" component="div">
+              <CardTitle gutterBottom variant="h5" component="div" sx={{fontSize: {
+                xs: '0.7rem',
+                sm: '1rem',
+                md: '1.5rem',
+              }}}>
                 Sip-Sip Hooray
               </CardTitle>
-              <CardInfo variant="body3">
+              <CardInfo variant="body3" sx={{fontSize: {
+                xs: '0.3rem',
+                sm: '1rem',
+                md: '1rem',
+              }, lineHeight: 0}
+              }>
                 My 23T3 trainee group project which focuses on a drinking simulator, intended to test and track the user&apos;s progress with the quantity and type of drinks interacted in the application
               </CardInfo>
             </CardContent>

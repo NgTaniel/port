@@ -21,6 +21,7 @@ const Homepage = () => {
       <div className={styles.buttoncontainer}>
         <button onClick={() => navigate('/port/about')}>About Me</button>
         <button onClick={() => navigate('/port/experience')}>Education and Experiences</button>
+        <button onClick={() => navigate('/port/tech')}>Tech Experience</button>
         <button onClick={() => navigate('/port/projects')}>Projects and Works</button>
         <button onClick={() => navigate('/port/contact')}>Contact me</button>
       </div>
