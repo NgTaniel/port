@@ -37,14 +37,20 @@ const Contactpage = () => {
     display: 'flex', 
     justifyContent: 'space-evenly', 
     gap: '2vw', 
-    marginBottom: '2em'
-  })
+    marginBottom: '2em',
+
+    '@media (max-width: 750px)': {
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '1.5rem'
+    }
+  });
 
   const ContactButton = styled(Button)({
     border: '2px solid white', 
     padding: '2em', 
     borderRadius: '50%'
-  })
+  });
 
   return (
     <>
@@ -82,6 +88,7 @@ const Contactpage = () => {
           </ContactButton>
         </ButtonRow>
       </ContactContainer>
+      <br/>
     </AnimateComp>
     </>
   )

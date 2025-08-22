@@ -19,7 +19,7 @@ const Projectpage = () => {
     border: '2px solid white',
     borderRadius: '10px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-    width: '50vw',
+    width: '75vw',
     margin: '5vh auto',
     padding: '0 3vw',
     color: 'white',
