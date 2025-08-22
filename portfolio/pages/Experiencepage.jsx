@@ -51,7 +51,7 @@ const Experiencepage = () => {
   const data = [
     createData('Software Development Society (DevSoc) UI/UX Subcommittee', 'TERM 1 2025 ~ present',
       [
-        'Conducting user research methods such as interviews, competitor research and user testing, to understand the user\’s needs and utilise findings to improve and redesign society’s (CCA) flagship projects user experience delivery for its target audience and users',
+        'Conducting user research methods such as interviews, competitor research and user testing, to understand the user’s needs and utilise findings to improve and redesign society’s (CCA) flagship projects user experience delivery for its target audience and users',
         'Communicating with multiple portfolios and collaboratively designed the UI/UX for new projects and redesigned existing projects based on an existing design system'
       ]
     ),
