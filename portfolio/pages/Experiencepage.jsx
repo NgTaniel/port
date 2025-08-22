@@ -76,6 +76,32 @@ const Experiencepage = () => {
     )
   ];
 
+  const workData = [
+    createData(
+      'Casual Academic/Teaching Assistant at UNSW Computer Science and Engineering (CSE)', 'May 2025 ~ present',
+      [
+        'Responsible for creating and delivering resources on design principles and importance of user experience to a tutorial of university students',
+        'Demonstrated example activities utilising principles and heuristics such as collaborative website and interface critique and analysis', 
+        'Collaborated with tutoring team and head professor in successfully delivering the course materials and managing admin-related queries'
+      ]
+    ),
+    createData(
+      'UNSW CSE Exam invigilator', 'August 2025 ~ present',
+      [
+        'Set up and monitor exam periods by the established procedures, including specific materials and instructions for each course exam',
+        'Coralling and supporting students’ exams in-person by following UNSW processes and procedure'
+      ]
+    ),
+    createData(
+      'UIUX and Frontend Developer Intern', 'June 2025 ~ present',
+      [
+        'Working at a start-up addressing issues involving high carbon emissions, and resolving this by targeting carbon allowances and locking them from high emitters',
+        'Gained hands-on experience with blockchain concepts and applying frontend and prototyping knowledge to this project',
+        'Designed a Figma project inspired by MetroGnomo’s file timestamps, ChainZY to design and develop a C2Zero styled timestamp application for users contributing to the company’s cause'
+      ]
+    )
+  ];
+
   const HeaderCells = styled(TableCell)({
     backgroundColor: 'black', 
     color: 'white',
@@ -117,6 +143,42 @@ const Experiencepage = () => {
             </TableHead>
             <TableBody>
               {data.map((col, index) => (
+                <TableRow
+                key={col.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 }, 
+                backgroundColor: index % 2 === 0 ? '#422E8A' : '#543BB0' }}
+                >
+                  <StyledCells sx={{background: 'none'}} component="th" scope="row">
+                    {col.name}
+                  </StyledCells>
+                  <StyledCells align="left">{col.duration}</StyledCells>
+                  <StyledCells align="left">
+                    <ul>
+                      {col.summary.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </StyledCells>
+                  
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <br/>
+
+        <Subheading>Work Experiences</Subheading>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 600 }} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <HeaderCells>Experience</HeaderCells>
+                <HeaderCells align="center">Duration</HeaderCells>
+                <HeaderCells align="center">Roles&nbsp;and&nbsp;Responsibilities</HeaderCells>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {workData.map((col, index) => (
                 <TableRow
                 key={col.name}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 }, 
