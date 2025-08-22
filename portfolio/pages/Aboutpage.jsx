@@ -11,15 +11,16 @@ const Aboutpage = () => {
     border: '2px solid white',
     borderRadius: '10px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-    width: '50vw',
+    width: '75vw',
+    textAlign: 'center',
     margin: '5vh auto',
     padding: '0 3vw',
     color: 'white',
-    lineHeight: 1.6
+    lineHeight: 1.6,
+    position: 'relative'
   });
 
   const NoteIcon = styled('div')({
-    // margin: '0 auto',
     textAlign: 'center'
   })
 
@@ -38,8 +39,9 @@ const Aboutpage = () => {
     border: 'none',
     cursor: 'pointer',
     color: 'white',
-    position: 'relative',
+    position: 'absolute',
     top: '2em',
+    left: '2em'
   })
   
   return (

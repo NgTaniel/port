@@ -13,9 +13,11 @@ import expresslogo from '../techlogos/expresslogo.png'
 import styledcomplogo from '../techlogos/styledcomponents.png'
 import muilogo from '../techlogos/muilogo.png'
 import mantinelogo from '../techlogos/mantineui.png'
+import tailwindlogo from '../techlogos/tailwindlogo.png'
 
 import sqllogo from '../techlogos/sqllogo.png'
 import firebaselogo from '../techlogos/firebaselogo.png'
+import mongologo from '../techlogos/mongodblogo.svg'
 
 import gitlogo from '../techlogos/Giticon.png'
 import figmalogo from '../techlogos/Figmalogo.png'
@@ -39,7 +41,7 @@ const Techpage = () => {
     border: '2px solid white',
     borderRadius: '10px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-    width: '50vw',
+    width: '70vw',
     margin: '5vh auto',
     padding: '0 3vw',
     color: 'white',
@@ -116,6 +118,10 @@ const Techpage = () => {
             <img src={mantinelogo} alt='mantine' style={{width: '50%'}}/>
             <h1>Mantine UI</h1>
           </div>
+          <div className={styles.techbox}>
+            <img src={tailwindlogo} alt='tailwind' style={{width: '80%'}}/>
+            <h1>Tailwind</h1>
+          </div>
         </div>
 
         <Heading>Databases</Heading>
@@ -127,6 +133,10 @@ const Techpage = () => {
           <div className={styles.techbox}>
             <img src={firebaselogo} alt='firebase' style={{width: '50%'}}/>
             <h1>Firebase</h1>
+          </div>
+          <div className={styles.techbox}>
+            <img src={mongologo} alt='mongodb' style={{width: '50%'}}/>
+            <h1>MongoDB</h1>
           </div>
         </div>
 
