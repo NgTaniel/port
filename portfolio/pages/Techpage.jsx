@@ -18,10 +18,12 @@ import tailwindlogo from '../techlogos/tailwindlogo.png'
 import sqllogo from '../techlogos/sqllogo.png'
 import firebaselogo from '../techlogos/firebaselogo.png'
 import mongologo from '../techlogos/mongodblogo.svg'
+import nestlogo from '../techlogos/nestlogo.svg'
 
 import gitlogo from '../techlogos/Giticon.png'
 import figmalogo from '../techlogos/Figmalogo.png'
 import unreallogo from '../techlogos/UnrealEngine.png'
+import prismalogo from '../techlogos/prismaHD.png'
 
 import styles from '../styles/Techpage.module.css'
 
@@ -104,6 +106,10 @@ const Techpage = () => {
             <img src={expresslogo} alt='express' style={{width: '50%'}}/>
             <h1>ExpressJS</h1>
           </div>
+          <div className={styles.techbox}>
+            <img src={nestlogo} alt='nest' style={{ width: '50%' }} />
+            <h1>NestJS</h1>
+          </div>
         </div>
         <div className={styles.techrow}>
           <div className={styles.techbox}>
@@ -131,12 +137,16 @@ const Techpage = () => {
             <h1>SQL</h1>
           </div>
           <div className={styles.techbox}>
-            <img src={firebaselogo} alt='firebase' style={{width: '50%'}}/>
-            <h1>Firebase</h1>
+            <img src={prismalogo} alt='prisma' style={{width: '50%'}}/>
+            <h1>Prisma ORM</h1>
           </div>
           <div className={styles.techbox}>
             <img src={mongologo} alt='mongodb' style={{width: '50%'}}/>
             <h1>MongoDB</h1>
+          </div>
+          <div className={styles.techbox}>
+            <img src={firebaselogo} alt='firebase' style={{width: '50%'}}/>
+            <h1>Firebase</h1>
           </div>
         </div>
 
